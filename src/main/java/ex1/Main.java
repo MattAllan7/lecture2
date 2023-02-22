@@ -25,6 +25,8 @@ public class Main
 
         //camel case
 
+        //commit: saves repository changes  on local
+        //push: updates git commit changes and sends it to remote repo (GitHub)
 
     }
 }
