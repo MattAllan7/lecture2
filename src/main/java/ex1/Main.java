@@ -1,8 +1,11 @@
 package ex1;
 
+import java.net.SocketOption;
+import java.util.SortedMap;
+
 public class Main //class
 {
-    public static void main(String[] args) //method
+    public static void main(String[] args) //signature of the method
     {
         //bits describe the size of the CPU's data bus
 
@@ -45,10 +48,34 @@ public class Main //class
 
         int sum = add(12,5);
 
+        //length() method
+        //int gets the number of characters in the "greeting" variable
+        String greeting2 = "Hello, World!";
+        int numberOfCharacters = greeting2.length();
+
+        //toUpperCase method
+        //creates a new String reading: "MISSISSIPPI" - two separate strings
+        String river = "Mississippi";
+        String bigRiver = river.toUpperCase();
+
+        System.out.println(greeting2.length());
+
+        //replace method
+        river = river.replace("issipp", "our");
+        System.out.println(river);
+        //river is now "Missouri"
+
+        System.out.println(river.replace("issipp", "our"));
+        //river is still "Mississippi"
+
+
+
     }
-    private static int add(int x, int y)
+    private static int add(int x, int y) //creating a method
     {
         int sum = x + y;
         return sum;
     }
+
+
 }
